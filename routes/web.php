@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::get('/login',[FrontController::class,'login']);
 //Register Pge
 Route::get('register',[FrontController::class,'register']);
 
+
 //Products Page
 Route::get('products',[FrontController::class,'products']);
 
@@ -37,3 +39,6 @@ Route::get('checkout',[FrontController::class,'checkout']);
 Route::get('contact-us',[FrontController::class,'contact']);
 
 
+//Admin Controller here
+//dashboard
+Route::get('dash',[DashboardController::class,'dash']);
